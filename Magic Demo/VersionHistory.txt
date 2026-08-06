@@ -1,0 +1,739 @@
++===========================+
+|                           |
+|   Magic Version History   |
+|                           |
++===========================+
+
+
+What's New In Version 2.33
+--------------------------
+- Fixed bug with SceneInput modules
+- Fixed bug with Spout compatibility on Windows
+
+
+What's New In Version 2.32
+--------------------------
+- Improved alpha channel handling for Spout
+- Improved frame accuracy for video modules
+- Improved performance when using large numbers of globals
+- Fixed bug with loading FFGLs on macOS
+
+
+What's New In Version 2.31
+--------------------------
+- Added new Null module
+- Added new SineWave module
+- Added new Restart module
+- Added option not to restart modules when changing inputs/scenes
+- Added new ProRes 4444 codec for movie exporting
+- Added previous input and output values to Expression modifier as 'xp' and 'y' variables
+- Added parameter to VideoFolder module for looping current video
+- Improved movie exporting to not include audio track when audio files are muted
+- Improved movie exporting to use uncompressed audio in all .mov formats
+- Improved description in Feature box when no Source selected
+- Fixed bug with loading Playlist MIDI commands from older projects
+- Fixed bug with AAC audio encoding in exported movies
+- Fixed bug with first frame of audio cut off in exported movies
+- Fixed bug with drop-down menu separator on macOS Big Sur
+- Fixed bug with loading globals from older projects
+
+
+What's New In Version 2.3
+-------------------------
+- Added new OSCSender module
+- Added new VideoFolder module
+- Updated MIDI/OSC functionality in Playlist to use Input Sources
+- Added MIDI file playback control for Playlist
+- Added separate Reload parameter in file-based modules
+- Updated module file sorting to be case-insensitive
+- Improved Dark UI Mode support
+- Improved handling of comments in GLSLShader module
+- Added Override parameters in ColorRGB/HSB modules
+- Fixed rare crash in SceneInput modules
+- Fixed minor bug with module folder parameters
+- Fixed bug with divide-by-zero error in Expression module
+
+
+What's New In Version 2.22
+--------------------------
+- Added new Iterator module
+- Added new Iterator-related functionality for creating arrays of
+  MIDI notes and audio frequencies
+- Added/updated sample projects for Iterator module
+- Added more quick resolution presets
+- Allowed video_size override in VideoCaptureDS module
+- Improved output stability when making large project edits
+- Fixed bug with missing device in VideoCaptureQT module
+- Fixed bug with reloading VideoStream module
+- Fixed bug with playlist export timing
+- Fixed rare bug with licensing on Windows
+
+
+What's New In Version 2.21
+--------------------------
+- Added multi-line code-editing box for Expression modifier
+- Added option to re-scan MIDI devices without restarting application
+- Added countdown and automatic audio playback when recording MIDI input
+- Added option to ignore resolution in saved projects
+- Added quick resolution presets for Magic window
+- Added quick resolution and fps presets for Export Movie dialog
+- Added new keyboard shortcut for Export Movie
+- Added preview options to playlist entry menu
+- Fixed bug with flipped ISF imported images
+- Fixed bug with flipped Starfield input
+- Fixed bug with position of drop-down box content for some module parameters
+- Fixed bug with incorrect copied file time/date when collecting assets
+- Fixed bug with auto-save overwriting last project folder
+
+
+What's New In Version 2.2
+-------------------------
+- Added new search-by-name popup box for modules
+- Added new movie exporting engine with more formats, improved quality,
+  and higher resolutions
+- Added new Internals source/features for modules and globals
+- Added ability to use Preview Window with specific modules in a scene
+- Improved movie exporting speed
+- Improved graphics memory management for exporting
+- Improved mouse behavior for connectors
+- Updated Spout to latest version
+- Added no-alpha option for Spout/Syphon
+- Improved compatibility with macOS Mojave
+- Fixed bug with incorrect first frame on some movie exports
+- Fixed bug with long module chains (>32) not working properly
+- Fixed bug with duplicate Post-processing in child scene modules
+- Fixed bug with module next/previous replace commands
+- Fixed bug with module menu order on some computers
+- Fixed bug with modifier MIDI Learn when source not already added
+- Fixed bug with rewinding certain videos in VideoFile module
+- Fixed bug with incorrect alignment on some video capture devices
+- Updated MDK API
+
+
+What's New In Version 2.13
+--------------------------
+- Added Help menu option to reset default paths
+- Added Help menu option to reset all settings
+- Added File menu option to clear recent projects
+- Added Scene menu option to switch scenes when undoing/redoing module actions
+- Added Text/TextFile module option to align text to window
+- Added Text/TextFile module parameter to display specific line number
+- Added Input Sources menu option to close audio input device
+- Added Starfield module parameters to specify distance and spread
+- Limited size of module drop-down menus
+- Fixed bug with module Edit menu
+
+
+What's New In Version 2.12
+--------------------------
+- Added keyboard shortcuts for replacing modules with next/previous in menu
+- Added keyboard shortcut for resetting modules
+- Added Auto-Save option
+- Added Random Trigger modifier
+- Added "Recent" menu for adding/inserting modules
+- Added new Scale parameter to all Media modules
+- Added buttons for browsing audio/MIDI files in Input Sources window 
+- Added option to hide full audio/MIDI file paths in Input Sources window
+- Added multi-select editing in Folder View for post-processing, graphics
+  memory, and renaming
+- Improved handling of graphics memory when duplicating scenes
+- Replaced module double-click behavior with minimize/maximize toggle
+- Fixed bug with renaming Globals
+- Fixed bug with Hap videos not multiples of 16 pixels wide
+- Fixed bug with occasional missed audio/MIDI/OSC input data
+
+
+What's New In Version 2.11
+--------------------------
+- Added buttons and keyboard shortcuts for browsing module File parameters
+- Added ability to use Globals as variables in Expression modifier
+- Added better handling of Expression modifier errors
+- Added background color options for module Annotations
+- Added option to keep Annotations visible when minimizing modules
+- Added new module menu options to Edit and Reload external ISF files
+- Added new module menu option to Edit external GLSLShader files
+- Added new Scale module parameter for using X for all three dimensions
+- Added new Spectrum module parameters for additional visual options
+- Added persistent preference for Hide Close Buttons option in Tab menu
+- Added Scene menu option to completely hide Tab Panel
+- Added Scene/Tab/Folder menu options for adding scenes to Playlist
+- Added functionality to reset modules by double-clicking title bar
+- Added option to never show mouse cursor over Fullscreen view
+- Added new Timer sample project
+- Improved support for disabled module parameters
+- Updated GLSLShader module with newer time specification
+- Fixed bug with texture file paths for some formats in Model module
+- Fixed bug with copying-and-pasting modules into existing projects
+- Fixed bug with dialog boxes inaccessible when outside of screen area
+- Fixed bug with connecting modules in different scenes
+- Fixed bug with macOS system tabs
+- Fixed bug with transparency in animated .gifs
+
+
+What's New In Version 2.1
+-------------------------
+- Added Open Sound Control support for modules, globals, and playlist
+- Added new VideoCaptureDS and VideoCaptureQT modules for legacy capture devices
+- Improved speed of .png image sequence export
+- Renamed Audio Window to Input Sources Window
+- Moved audio gain sliders into Input Sources Window with show/hide option
+- Added minor UI tweaks for scene selection
+- Added information for missing files in module File parameters
+- Fixed bug with disconnected/unavailable streams in VideoStream module
+- Fixed bug with small memory leaks in VideoFile module
+- Fixed bug with non-standard sizes for Hap videos in VideoFile module
+- Fixed bug with MIDI Learn not updating modules properly in some rare cases
+- Fixed bug with quickly double-clicking Magic project files from OS folders
+- Fixed bug with renaming folders after importing projects
+
+
+What's New In Version 2.01
+--------------------------
+- Added support for ISF v2
+- Included over 200 ISF v2 filters
+- Fixed bug with unsupported audio sample rates when exporting .mp4s
+- Fixed bug with memory leak in fullscreen mode on some graphics cards
+- Fixed bug with Preview Window not stopping/starting on some graphics cards
+- Fixed bug with not clearing Globals panel between project loads
+- Fixed bug with not initializing Custom Freq ranges properly
+- Fixed bug with tooltips causing occasional crashes on Windows
+- Fixed bug with some effects not resetting inside scene modules
+- Fixed bug with removing Playlist entries when Randomize is enabled
+- Fixed bug with adding audio files when no audio output available
+- Fixed bug with incorrect license invalidation on some Windows computers
+- Fixed bug with modifiers not processed immediately after loading project
+- Fixed bug with negative start time cutting off audio files
+
+
+What's New In Version 2.0
+-------------------------
+- Updated UI, including new Dark Mode option
+- Added new Folder View panel
+- Added new Global Parameters functionality
+- Added new Preview Window and Preview Mode for live editing
+- Added new save function for individual scenes and folders
+- Added new MIDI file playback and recording functions
+- Added multi-display spanning in fullscreen mode
+- Added ability to close tabs
+- Added bars to indicate aspect ratio in Magic Window
+- Added MIDI toggle option for modifier bypass
+- Added Scale parameter to Image module
+- Added Restart option in Additional Module Folders window
+- Added show/hide toggle for all window keyboard shortcuts
+- Added option to exclude scenes from post-processing
+- Added double-clicking on module parameters to reset to default values
+- Added incremented names for Spout/Syphon when running multiple instances
+- Added new sample projects to demonstrate new features
+- Improved clicking/dragging sensitivity for tabs and modules
+- Improved behavior of ISF modules when dealing with temporary buffers
+- Improved behavior when deleting Scene modules
+- Improved behavior when using the same Scene modules multiple times
+- Improved behavior of Magic Window when loading projects
+- Improved timing accuracy of Hold and Tri Osc modifiers
+- Improved licensing system
+- Fixed bug with missing transparency during Playlist transitions
+- Fixed bug with Collect Assets command not handling JpegFolder module
+- Fixed bug with module Add Input command not adding first Scene module
+- Fixed bug with disabled Scene Start parameter ignored in VideoFile module
+- Updated MDK API
+
+
+What's New In Version 1.65
+--------------------------
+- Added new VideoStream module for displaying live network video streams
+- Added new Expression modifier for advanced math/logic operations
+- Added new Magic Window toggle option: Load All Scenes Into Graphics Memory
+- Added new scene tab toggle option: Keep In Graphics Memory
+- Added new Audio/MIDI Window toggle option: Load Audio Files Into Memory
+- Added new File menu toggle option: Auto-Backup Projects
+- Added new Help menu toggle option: Check For New Version At Startup
+- Added new menu command for Scene modules: Goto [Scene name]
+- Added ability to use module Show Annotation / Show Param For commands on group
+  selection
+- Added linking option for Trails Z/X parameter
+- Improved handling of bypass button/parameter visibility in Scene modules
+- Improved handling of invalid files in Video module
+- Improved ISF support for point2D MIN/MAX options
+- Improved texture support in Model module
+- Improved password menu security
+- Improved Editor window scrolling when dragging connectors
+- Improved Hold modifier to accept any duration
+- Improved Increase modifier to accept negative values
+- Renamed Video and VidCap modules to VideoFile and VideoCapture
+- Fixed bug with Export dialog's "Get audio length" button not making project
+  saveable
+
+
+What's New In Version 1.64
+--------------------------
+- Added significant improvements for modifier editing:
+  - Selection of multiple modifiers by clicking with Ctrl/Cmd and/or Shift
+  - Standard keyboard shortcuts for modifier Cut/Copy/Paste/Remove/Select All
+  - Extended Paste functionality based on selection, mouse position, and/or
+    Shift key
+  - Reordering and/or bypassing all selected modifiers at once
+- Added support for GPU-accelerated Hap codecs in Video module
+- Added support for backwards playback in Video module (dependent upon codec)
+- Added option to show module bypass/power params by default
+- Added button in Export Movie dialog for updating length from audio files
+- Added panning in Editor window by dragging with middle mouse button
+- Added new keyboard shortcuts for quickly connecting selected modules
+- Added new Paste Replace command and keyboard shortcut for modules
+- Improved readability of graphics memory
+- Improved support for audio devices on Macs
+- Added new Help menu option for viewing Version History (this document)
+- Fixed bug with Video module dropping last frames for some codecs
+- Fixed bug with wrong Playlist time when dragging audio playback slider
+- Fixed bug with module annotations at bottom rather than top
+
+
+What's New In Version 1.63
+--------------------------
+- Added four new modifiers: Delay, Hold, Invert, Trigger
+- Added cut/copy/paste for modifiers
+- Added independent last folder paths for modules, audio files, and exported
+  movies
+- Added Speed param for time-dependent ISF modules
+- Added new command for automatically creating/updating post-processing scene
+- Added Video module GPU acceleration for Planar 4:2:0 YUV pixel format
+- Added ability to change font size of application UI
+- Added two levels of password protection for projects
+- Added keyboard shortcut for Playlist auto-advance
+- Fixed bug with running as a different user on OS X
+- Fixed bug with MIDI not updating when undoing remove of modifiers
+- Fixed bug with rounding error in Wrap modifier
+- Fixed bug with duplicate scene names when importing projects
+- Fixed bugs with JpegFolder image alignment and color
+
+
+What's New In Version 1.62
+--------------------------
+- Added four new modules: Text, TextFile, MultiMix, JpegFolder
+- Added new Increase modifier
+- Improved options for MIDI Beat Clock
+- Added auto-selection of NVidia graphics on systems with dual graphics
+- Improved DPI support and multi-monitor behavior on Windows
+- Fixed some minor bugs with ISF shaders 
+
+
+What's New In Version 1.61
+--------------------------
+- Added MIDI control for modifier parameters and bypass
+- Added MIDI control for individual playlist entries
+- Added input for Scene modules
+- Added option to synchronize modules via playlist
+- Added new Remove Unused Inputs command
+- Added Beat Clock auto-detection to MIDI Learn with option to disable
+- Added option to remove assigned MIDI commands
+- Added new sample projects: SceneInputExample, DancingRobot,
+  StereoSpectrum_30Band
+- Added parameter to Mask module for toggling transparency source
+- Improved speed of closing application
+- Fixed bug with fullscreen window not closing properly on some graphics cards
+- Fixed bug with occasional crash after exiting
+- Fixed bug with some modules not minimizing properly in Editor Window
+- Fixed bug with dragging mouse to edit tab names
+
+
+What's New In Version 1.6
+-------------------------
+- Added several new modules: Array, AudioToImage, Blend, ChromaKeyFast,
+  InputSelector, Mask, Mix, NoiseBlur, Pixelate, Posterize, Transparency
+- Added support for ISF shaders as modules
+- Improved GLSLShader module compatibility with Shadertoy and GLSL Sandbox
+  shaders
+- Included SpoutReceiver and SyphonClient modules (no longer a separate
+  download)
+- Added new LayersExamples and PowerBypassParamExamples sample projects
+- Updated Effects2DExamples sample project to demonstrate new Effects2D modules
+- Added MIDI Controller # input and reorganized MIDI menus
+- Increased accuracy of MIDI calculations
+- Added Overwrite parameter to Waveform module
+- Improved support for alpha channels in Video module
+- Improved overall stability on OS X
+- Added error log for compiling GLSL shaders
+- Fixed bug with modules not resetting properly when using Power/Bypass
+  parameters
+- Fixed bug with incorrect playlist entry duration when overriding auto-advance
+- Fixed bug with auto-arranging modules with multiple outputs
+- Updated MDK API
+
+
+What's New In Version 1.55
+--------------------------
+- Added option to control module power/bypass via parameters
+- Added option for Spout v2 output
+- Added keyboard shortcuts for adding/duplicating scenes
+- Added new Insert commands in module connector menu
+- Fixed bug with incorrect texture input to GLSLShader module
+
+
+What's New in Version 1.54
+--------------------------
+- Added MIDI control for previous/next buttons in Playlist
+- Added MIDI beat clock input for module parameters
+- Added deinterlacing option for Video and VidCap modules
+- Increased accuracy of custom frequency ranges
+- Improved compatibility with FFGL source plugins
+- Improved audio and spectrum data for GLSLShader module
+- Improved compatibility with input textures for GLSLShader module
+- Improved MIDI Learn behavior to ignore unsupported messages
+- Added file filters for GLSLShader module
+- Added option to not load default module files
+- Fixed bug with 0-velocity MIDI note-on messages
+- Fixed bug with modifiers resetting when using Scene modules
+- Fixed bug with overriding playback sample rate on Macs
+- Fixed bug with first shift-click on Playlist entry
+- Fixed bug with replacing audio file with same one
+- Fixed bug with 0-duration playlist entries and movie exports
+- Fixed bug with connector order when pasting multiple modules
+- Fixed bug with unsupported Freeframe 1.0 plugins 
+
+
+What's New in Version 1.53
+--------------------------
+- Updated color scheme with darker backgrounds for use in lower-light
+  environments
+- Added "Collect Assets" command for consolidating project files into one folder
+- Added bypass button for parameter modifiers
+- Added up to 24 dB of negative gain for audio inputs
+- Added use of Shift key for increased precision when dragging to change values
+- Added option to remain in fullscreen mode on primary display when other apps
+  are used
+- Added keyboard shortcut for "Cleanup Graphics Memory" command
+- Reduced default size of Magic Window
+- Updated sample projects to 16:9 aspect ratio
+- Reorganized some menu items
+- Fixed bug with inaccessible Editor Window after disconnecting secondary
+  display
+- Fixed bug with incorrect Editor Window title when "Change Tabs with Playlist"
+  enabled
+- Fixed bug with some alpha channel functionality not working with DepthTest
+  module
+
+
+What's New in Version 1.52
+--------------------------
+- Added simultaneous fullscreen and non-fullscreen Magic Windows
+- Added constant graphics resolution for Magic Window
+- Added ability to use Spout and Syphon output in fullscreen mode
+- Added status indicator for Spout and Syphon output
+- Added Yosemite compatibility for OS X version
+- Improved .mp4 export quality on Windows 8
+- Fixed issue with fullscreen Magic Window not above OS X menu bar on secondary
+  displays
+- Changed playlist entry numbers to start at 0 instead of 1 for better
+  consistency
+- Added several keyboard shortcuts
+
+
+What's New in Version 1.51
+--------------------------
+- Added MIDI Learn feature for module parameters and for playlist control
+- Added Starfield option to use module input as star image
+- Improved Image module loading time
+- Improved Image module support for non-standard image formats
+- Added individual notes to Aftertouch MIDI feature
+- Fixed bug with loading duplicate modules from additional module folders
+- Fixed bug with playlist drag indicator not showing
+- Fixed bug with incorrect path redirection for old projects using 2DScenes
+  module
+- Fixed bug with disabled modules not greyed out properly when pasting
+
+
+What's New in Version 1.5
+-------------------------
+- Added support for FFGL plugins as modules
+- Added ability to specify additional module folders
+- Renamed 2DScenes module to GLSLShader and significantly improved GLSL
+  functionality
+- Improved internal precision of module parameter calculations
+- Improved responsiveness of module text updating
+- Added ability to stop and start capture devices in VidCap module
+- Fixed bug with editing playlist entry start times
+- Fixed bug with out-of-bounds values for Power and Exponent modifiers
+- Fixed bug with re-selecting same file in module File chooser
+- Fixed bug with playlists not repeating during movie exports
+- Fixed bug with auto-arrange not working for some unconnected modules
+- Fixed bug with missing ASIO input device buffer sizes on Windows
+- Fixed bug with some product keys incorrectly reported as invalid
+- Fixed bug with crash when canceling some project loads
+- Updated MDK API
+
+
+What's New in Version 1.44
+--------------------------
+- Added built-in support for Spout (Windows) and Syphon (OS X) to share
+  real-time graphics output with other applications
+- Improved protection against overwriting exported movies
+- Fixed bug with scene modules crashing when referencing current scene 
+
+
+What's New in Version 1.43
+--------------------------
+- Added support for videos with alpha channels in Video module
+- Added editing of scene names directly in tabs
+- Added real-time monitoring of graphics memory for NVidia and AMD/ATI graphics
+  cards
+- Improved responsiveness of Volume and Freq. Range features
+- Added Step modifier for modules
+- Added Auto-Arrange function for modules
+- Added button for reloading files in modules
+- Added resizing of audio file panel in Audio/MIDI Window
+- Added invidual MIDI note velocities for playlist control
+- Fixed bug with occasional crashes in VidCap module with some Windows devices
+- Fixed bug with out-of-bounds playlist MIDI messages triggering first entry
+- Fixed bug with relative pathnames when using OS X version to load projects
+  saved with Windows version
+- Fixed bug with encoding loud audio files when exporting movies
+- Fixed bug with freezing during exporting playlist due to "Change Scene Tabs
+  with Playlist" option
+
+
+What's New in Version 1.42
+--------------------------
+- Added Annotation feature for writing comments in modules
+- Added Insert Input and Insert Output commands for modules
+- Added Replace command for audio files, including automatically re-mapping
+  inputs
+- Added option to specify start time for audio files (positive or negative)
+- Added Kaleidoscope module option to extend corners to fill Magic Window
+- Changed toggle for Magic Window status info to hide resizing of scenes when
+  disabled
+- Added option to temporarily disable playlist entries
+- Fixed bug with some modules causing thin black border around Magic Window
+  output
+- Fixed bug with occasional glitches when importing some audio file formats on
+  Windows
+- Fixed a few minor bugs with mouse clicking behavior
+
+
+What's New in Version 1.41
+--------------------------
+- Added individual MIDI note velocities for module parameters
+- Added new MIDIPiano sample project to demonstrate note velocities
+- Added looping toggle to Video module
+- Added invert toggle to LumaKey module
+- Added linking to Iterations parameter in Kaleidoscope module
+- Added display of full file path when hovering over module file chooser
+- Added option to start auto-advance when starting in fullscreen mode
+- Added option for current scene tab to change with playlist
+- Added option to randomize playlist
+- Added option to delete multiple scene tabs at once
+- Added ability to scroll left and right in scene tab using Shift key with mouse
+  wheel
+- Added command to synchronize all modules in current scene
+- Changed toggle for Magic Window status info to hide resizing message when
+  disabled
+- Improved error message for unsupported audio sample rate when exporting .mp4's
+- Fixed missing icon for project files on OS X
+- Fixed bug with scrollbars sometimes not responding after dragging modules
+- Fixed bug with unassigned inputs preventing processing of modifiers
+- Fixed bug with occasional empty/extra entries in undo history
+
+
+What's New in Version 1.4
+-------------------------
+- Added customizable audio frequency ranges for module parameters, plus 5
+  presets
+- Added new FreqRanges sample project to demonstrate frequency ranges
+- Added several more MIDI features for modules and Playlist
+- Separated MIDI controller messages properly (modulation, breath, foot pedal,
+  etc.)
+- Added start/end loop points and "Go To Start" trigger to Video module
+- Added new scene to VideoExamples sample project to demonstrate "Go To Start"
+  trigger
+- Added option to use "Go To Start" automatically when changing scenes
+- Added show/hide toggles to reduce visual clutter for some options and menu
+  buttons
+- Added option to right-click to show pop-up menus in certain areas
+- Moved playlist transition and duration settings from drop-down menu to main
+  view
+- Added option to show playlist start times instead of durations
+- Added global keyboard shortcuts for toggling power/bypass/minimize on selected
+  modules
+- Added "duplicate" option for playlist entries
+- Added awareness of global selection to commands in most menus
+- Added "Log Y" parameter to Spectrum module
+- Added several new sample projects: RadialWave, DrippyStarfields, WaveCam,
+  RandomCircles, 3DSpectrums, BouncingBall
+- Changed DemoProject to use example in Quick Start section of User's Guide
+- Added option to globally disable all MIDI input
+- Improved usability of GUI, including updating some colors and buttons
+- Improved efficiency of audio feature calculations
+- Improved handling of dragging modules in scene tab area
+- Fixed bug with playlist auto-advance status sometimes displaying incorrectly
+- Fixed bug with audio gain adjustment affecting all inputs
+- Fixed bug with audio data not clearing properly when removing audio files or
+  switching input to MIDI
+- Fixed bug with tooltips being displayed underneath other windows
+- Fixed bug with pop-up menus not being dismissed properly
+- Fixed bug with audio offset not being used when exporting movies
+- Fixed bug with Magic Window being positioned incorrectly when toggling some
+  window options
+- Fixed bug with Video module crashing when loading videos with certain widths
+- Updated MDK API
+
+
+What's New in Version 1.33
+--------------------------
+- Improved connector dragging to create immediate module connections/
+  disconnections
+- Improved overall keyboard navigation
+- Added ability to select and reorder inputs and audio files
+- Added ability to completely disable keyboard input
+- Added "Merge Duplicate Inputs" command to Edit menu
+- Improved status display in Magic Window and added larger text option
+- Changed default 2DScenes shader due to issues with OS X Mavericks
+- Fixed bug with connecting modules in an infinite loop
+- Updated MDK API
+
+
+What's New in Version 1.32
+--------------------------
+- Added "Clamp" modifier
+- Added ability to switch to scene tab without displaying scene in Magic Window
+- Added ability to reload audio files
+- Added ability to merge duplicate inputs and audio files when importing
+  projects
+- Improved handling of audio files with modified channel counts when loading
+  projects
+- Fixed bug with ESC key not canceling drag operations properly
+- Combined undo actions for module parameter change via mouse scroll
+- Improved updating of module parameter values
+
+
+What's New in Version 1.31
+--------------------------
+- Added new Speed parameter to 2DScenes module
+- Fixed bug with invalid .mp4 export dimensions
+- Fixed bug with invalid Density parameter values in RadialBlur module
+- Fixed bug with wrong pin order when dragging connectors between outputs
+- Fixed bug with audio data not being cleared properly for files of different
+  lengths
+- Fixed bug with undoing remove of missing audio files
+
+
+What's New in Version 1.3
+-------------------------
+- Added 64-bit support for PC and Mac
+- Added ability to export .mp4 movies, including audio
+- Completely redesigned Video module, adding support for many more formats
+- Added new Speed parameter to Video module
+- Improved smoothness of VidCap module on Windows
+- Redesigned VidCap module on OS X
+- Fixed bug with some modules freezing when drawn more than once in a scene
+- Updated MDK API
+
+
+What's New in Version 1.22
+--------------------------
+- Added "Check For Updates" command to Help menu
+- Fixed Windows bug with slow/choppy Video module playback for some video
+  formats
+- Improved overall frame accuracy of Video module, especially when exporting
+- Fixed bug with Video and VidCap modules not being deactivated when Scenes are
+  deleted
+- Fixed OS X bug with Scene menu not displaying scene names properly
+
+
+What's New in Version 1.21
+--------------------------
+- Significantly improved graphics stability and memory management
+- Fixed bug with exporting image sequence using current scene
+- Fixed bug with incorrect transition duration in playlist
+- Added modifier reset when changing scenes or exporting
+- Added Trails module reset when changing scenes or exporting
+- Added menu option for manual graphics memory cleanup
+- Fixed bug with activation on OS X 10.6
+- Fixed Windows bug with other applications gaining focus
+- Fixed bug with transparency in LumaKey and RadialBlur modules
+
+
+What's New in Version 1.2
+-------------------------
+- Added ability to export .png image sequences
+- Added ability to use MIDI devices for module input
+- Added audio gain adjustment for audio inputs
+- Improved Video/VidCap modules
+- Improved handling of older graphics cards
+- Added option to clear undo history
+- Added OpenGL Info window
+- Added MIDI channel selection to Playlist Window
+- Added loop toggle button for audio file playback
+- Improved message boxes
+- Fixed bug with restoring minimized modal dialogs on Windows
+- Fixed bug with tooltips showing over fullscreen Magic Window
+- Updated MDK API
+
+
+What's New in Version 1.11
+--------------------------
+- Added support for Mac Retina displays
+- Fixed memory leak when importing audio files on Windows
+
+
+What's New in Version 1.1
+-------------------------
+- Added several new modules for post-processing effects: Antialias, Contrast,
+  HueSaturation, Invert, LumaKey, RadialBlur, Resolution
+- Added new "2DScenes" module for dynamic loading of GLSL pixel (fragment)
+  shaders
+- Added ability to embed scenes in other scenes
+- Added ability to "crossfade" and "additive dissolve" between playlist scenes
+- Added ability to independently set duration for each playlist scene
+- Added ability to link playlist to audio file playback
+- Added ability to start in fullscreen mode on a specific monitor
+- Replaced Square module with more versatile Polygon module
+- Added keyboard shortcut for rewinding audio files
+- Added ability to copy/paste modules between projects
+- Added "Colorize" parameter to Model module to allow scene color to be applied
+- Added new sample projects to demonstrate new modules and new functionality
+- Reorganized modules into subfolders
+- Updated frame rate control (throttling) and added to Mac version
+- Added Vertical Sync toggle
+- Added Hardware Antialiasing option to Windows version
+- Improved activation dialogs
+- Improved stability of Magic Window
+- Fixed memory leak with Intel Graphics drivers on Windows version
+- Fixed bug with Magic Window title not being updated properly
+- Fixed bug with scene numbering in new projects
+- Fixed bug with decimal rounding error when editing module parameters
+- Updated MDK API
+
+
+What's New in Version 1.02
+--------------------------
+- Added support for video capture device names in VidCap module
+- Added Grayscale parameter to VidCap module
+- Improved handling of capture device resolutions in VidCap module
+- Fixed bug with disconnecting and reconnecting capture devices in OS X version
+  of VidCap module
+- Replaced RotateX/Y/Z modules with new RotateAxis module
+- Renamed VectorRotate module to RotateVector
+- Added Double Buffer option for Windows version
+- Fixed bug with mouse showing in fullscreen mode when using keyboard tab
+  navigation
+- Fixed bug with importing project causing audio output to stop working
+- Added DepthTest as a separate module and removed redundant functionality from
+  existing modules
+- Added new DepthTestExample sample project
+- Fixed crash when using "Replace With" command on missing modules
+
+
+What's New in Version 1.01
+--------------------------
+- Added new FunWithStars sample project
+- Added keyboard shortcuts for next/prev Editor tab
+- Improved handling of capture devices in VidCap module
+- Improved handling of disabling modules
+- Improved handling of dragging to reorder Editor tabs
+- Improved handling of Playlist highlighting of Editor tabs
+- Improved handling of screen resolution changes and monitor disconnections
+  while in fullscreen mode
+- Fixed permissions error with SimpleStereoColor sample project
+
+
+What's New in Version 1.0
+-------------------------
+- Everything

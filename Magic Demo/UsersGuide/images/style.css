@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+table { border-collapse:collapse; }
+td { padding:10px; border: 1px solid black;}
+table.toc td { padding:0px; border:0px; }
+thead { background-color:#e0dfe1; font-weight: bold; }
+ul { padding-left:20px; list-style-type: disc; list-style-position: outside; margin-left: 15px; }
+ul ul { list-style-type: circle; list-style-position: outside; margin-left: 0px; }
+ol { padding-left:0px;  list-style-position: inside; list-style-type: upper-roman; font-weight: bold; }
+ol ul a { font-weight: normal; }
+li { margin-bottom:0.5em; }
+ol.toc { margin-top:0px; }
+ol.toc li { margin-bottom:.5em; margin-top:.5em; }
+ol.toc ul li { margin-bottom:0em; margin-top:0em; }
+ol.toc ul ul { margin-bottom:.5em; margin-top:.5em; }
+ol.toc ul ul ul { margin-bottom:.5em; margin-top:0em; list-style-type: circle; }
+p.tip { font-size:85%; }
+p.subtitle { font-size:200%; line-height: 1.25em; }
+p.subsubtitle { font-size:125%; line-height: 1.25em; }
+h1 { margin-top:1.5em; margin-bottom:1em; }
+h1.title { margin-top:1em; margin-bottom:1em; }
+h2 { margin-top:1.5em; margin-bottom:1em; }
+body { font-family: "PT Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+code { font-family: "Lucida Console", Monaco, monospace; }
+a { color: #7800a8; }
